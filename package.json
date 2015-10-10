@@ -25,12 +25,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ositoozy/react-example-es2015.git"
+    "url": "https://github.com/RamonGebben/react-template.git"
   },
   "author": "Oscar Lodriguez",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Ositoozy/react-example-es2015.git/issues"
+    "url": "https://github.com/RamonGebben/react-template.git/issues"
   },
-  "homepage": "https://github.com/Ositoozy/react-example-es2015.git#readme"
+  "homepage": "https://github.com/RamonGebben/react-template.git#readme"
 }
