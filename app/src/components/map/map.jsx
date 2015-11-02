@@ -34,7 +34,7 @@ class Map extends React.Component {
       this.mapCanvas = document.getElementById('map');
       this.mapOptions = {
           center: new google.maps.LatLng(52.0907370,  5.1214200),
-          zoom: 13,
+          zoom: 15,
           mapTypeId: google.maps.MapTypeId.ROADMAP,
           styles: this.mapStyles,
           disableDefaultUI: true
