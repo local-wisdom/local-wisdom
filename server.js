@@ -4,12 +4,11 @@ import r from 'rethinkdb';
 const server = new Hapi.Server();
 let connection = null;
 
-server.connection({ port: 3000 });
+server.connection({ port: 3000, routes: { cors: true } });
 r.connect( {host: 'localhost', port: 28015, db: 'local_wisdom'}, (err, conn) => {
     if (err) throw err;
     connection = conn;
 })
-
 
 server.route({
     method: 'GET',
@@ -66,7 +65,6 @@ server.route({
         });
     }
 });
-
 
 server.start(() => {
     console.log('Server running at:', server.info.uri);

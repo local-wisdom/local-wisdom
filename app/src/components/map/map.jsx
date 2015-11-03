@@ -27,7 +27,6 @@ class Map extends React.Component {
 			]
 		}
       ];
-
   }
 
   componentDidMount(){
@@ -43,10 +42,11 @@ class Map extends React.Component {
   }
 
   render() {
-    return (
-        <section style={{height: "100%"}}>
-            <div id='map' className='googleMap' />
-        </section>
+      console.log(this.props.authors);
+      return (
+          <section style={{height: "100%"}}>
+                <div id='map' className='googleMap' />
+          </section>
     );
   }
 }

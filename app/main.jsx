@@ -17,7 +17,6 @@ function renderShell() {
     document.body.appendChild(googleMapsScript);
 
     googleMapsScript.onload = () => { onGoogleReady(shell) };
-
 }
 
 
