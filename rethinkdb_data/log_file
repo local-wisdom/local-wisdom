@@ -460,3 +460,8 @@
 2015-11-02T21:25:05.125808000 0.419495s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
 2015-11-02T21:25:05.125810000 0.419497s notice: Server ready, "Eve_local_m4f" d29a9fdc-fe6a-4bee-b7fd-6c3ad4f42a9f
 2015-11-02T21:25:05.724204000 1.017852s notice: A newer version of the RethinkDB server is available: 2.1.5-2. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2015-11-03T09:41:27.446522000 4962.219020s notice: Server got SIGINT from pid 230, uid 501; shutting down...
+2015-11-03T09:41:27.446664000 4962.219158s notice: Shutting down client connections...
+2015-11-03T09:41:27.446797000 4962.219291s notice: All client connections closed.
+2015-11-03T09:41:27.446802000 4962.219296s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2015-11-03T09:41:27.450615000 4962.223109s notice: Storage engine shut down.
