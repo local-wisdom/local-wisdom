@@ -8,11 +8,13 @@ body {
   color: #333;
 }
 
+h1 { margin: 0; }
+
 nav {
     position: fixed;
     top: 0; left: 0; right: 0;
-    background-color: #6171FF;
-    z-index: 200;
+    background-color: #FF6673;
+    z-index: 5000;
 }
 
 .nav__logo {
@@ -23,7 +25,125 @@ nav {
     background-position: center;
 }
 
-.googleMap {
+.map {
     position: absolute;
     top:0; right:0; bottom:0; left:0;
+}
+
+.avatar-icon {
+    width: 0;
+    height: 0;
+    position: relative;
+}
+
+.avatar-icon > .avatar {
+    border: 2px solid #FF6673;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transform: translateY(-11px);
+    z-index: 5;
+}
+
+.marker-pointer {
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #FF6673;
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+}
+
+.leaflet-container a.leaflet-popup-close-button {
+
+}
+
+.leaflet-popup-content {
+    margin: 0;
+}
+
+.map-post {
+    padding: 1em;
+}
+
+/* ===========================  Admin  =========================== */
+
+
+.list-item {
+    display: flex;
+}
+
+.list-item_item {
+    display: flex;
+    border: 1px solid #ddd;
+    padding: .7em 2em;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-item_item.avatar {
+    background-size: cover;
+    background-position: center;
+}
+
+.editor {
+    position: fixed;
+    top: 60px; bottom: 0;
+    width: 50vw;
+    border-left: 1px solid #000;
+    background-color: #efefef;
+    -webkit-animation: slideIn .3s forwards; /* Safari 4+ */
+    -moz-animation:    slideIn .3s forwards; /* Fx 5+ */
+    -o-animation:      slideIn .3s forwards; /* Opera 12+ */
+    animation:         slideIn .3s forwards;
+}
+
+.editor.hide {
+    -webkit-animation: slideOut .3s forwards; /* Safari 4+ */
+    -moz-animation:    slideOut .3s forwards; /* Fx 5+ */
+    -o-animation:      slideOut .3s forwards; /* Opera 12+ */
+    animation:         slideOut .3s forwards;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+}
+
+
+@-webkit-keyframes slideIn {
+    0%   { right: -50vw; }
+    100% { right: 0; }
+}
+@-moz-keyframes slideIn {
+    0%   { right: -50vw; }
+    100% { right: 0; }
+}
+@-o-keyframes slideIn {
+    0%   { right: -50vw; }
+    100% { right: 0; }
+}
+@keyframes slideIn {
+    0%   { right: -50vw; }
+    100% { right: 0; }
+}
+
+@-webkit-keyframes slideOut {
+    0%   { right: 0; }
+    100% { right: -50; }
+}
+@-moz-keyframes slideOut {
+    0%   { right: 0; }
+    100% { right: -50vw; }
+}
+@-o-keyframes slideOut {
+    0%   { right: 0; }
+    100% { right: -50vw; }
+}
+@keyframes slideOut {
+    0%   { right: 0; }
+    100% { right: -50vw; }
 }
