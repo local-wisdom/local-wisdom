@@ -1,5 +1,5 @@
 # Local Knowledge
-![travis](https://travis-ci.org/RamonGebben/local-wisdom.svg)
+[![Build Status](https://travis-ci.org/RamonGebben/local-wisdom.svg?branch=master)](https://travis-ci.org/RamonGebben/local-wisdom)
 
 Project description here..
 
