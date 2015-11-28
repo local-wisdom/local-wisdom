@@ -1,5 +1,5 @@
 # Local Knowledge
-[![Build Status](https://travis-ci.org/RamonGebben/local-wisdom.svg?branch=master)](https://travis-ci.org/RamonGebben/local-wisdom)
+[![Build Status](https://travis-ci.org/RamonGebben/local-wisdom.svg?branch=master)](https://travis-ci.org/RamonGebben/local-wisdom)![unicorn](https://img.shields.io/badge/unicorn-approved-ff69b4.svg)
 
 Project description here..
 
