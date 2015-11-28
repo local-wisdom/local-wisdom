@@ -12,4 +12,4 @@ node_js:
 before_script:
   - npm i gulp -g
 
-npm run deploy
+script: npm run deploy
