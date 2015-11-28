@@ -1,4 +1,5 @@
 # Local Knowledge
+![travis](https://travis-ci.org/RamonGebben/local-wisdom.svg)
 
 Project description here..
 
