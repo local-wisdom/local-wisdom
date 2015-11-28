@@ -60,7 +60,16 @@ nav {
 
 }
 
-.leaflet-popup-content {
+.leaflet-popup-content { margin: 0; min-width: 35em;}
+
+.leaflet-popup-tip,
+.leaflet-popup-content-wrapper { box-shadow: none;}
+
+.leaflet-popup-content-wrapper {
+    border-radius: 2px;
+}
+
+.leaflet-popup-content p {
     margin: 0;
 }
 
@@ -68,77 +77,119 @@ nav {
     padding: 1em;
 }
 
-/* ===========================  Admin  =========================== */
-
-
-.list-item {
-    display: flex;
+.map-post_author {
+    margin-bottom: 1em;
 }
 
-.list-item_item {
-    display: flex;
-    border: 1px solid #ddd;
-    padding: .7em 2em;
-    flex-grow: 1;
-    justify-content: center;
-    align-items: center;
+.map-post_author:after,
+.map-post_body {
+    content: " ";
+    display: table;
+    clear: both;
 }
 
-.list-item_item.avatar {
+.map-post_author-name {
+    font-size: 1.7em;
+    font-weight: 900;
+}
+
+.map-post_author-shop {
+    font-size: 1.1em;
+}
+
+.map-post_author-avatar,
+.map-post_author-info {
+    float: left;
+}
+
+.map-post_body-header {
+    width: 15em;
+    height: 12em;
+    float: left;
+    margin: 0 1.3em 0 0;
     background-size: cover;
-    background-position: center;
 }
 
-.editor {
-    position: fixed;
-    top: 60px; bottom: 0;
-    width: 50vw;
-    border-left: 1px solid #000;
-    padding: 20px;
-    background-color: #efefef;
-    -webkit-animation: slideIn .3s forwards; /* Safari 4+ */
-    -moz-animation:    slideIn .3s forwards; /* Fx 5+ */
-    -o-animation:      slideIn .3s forwards; /* Opera 12+ */
-    animation:         slideIn .3s forwards;
+.map-post_author-avatar {
+    width: 75px; height: 75px;
+    background-size: 100%;
+    border-radius: 50%;
+    float: left;
 }
 
-.editor.hide {
-    -webkit-animation: slideOut .3s forwards; /* Safari 4+ */
-    -moz-animation:    slideOut .3s forwards; /* Fx 5+ */
-    -o-animation:      slideOut .3s forwards; /* Opera 12+ */
-    animation:         slideOut .3s forwards;
+.map-post_author-info {
+    margin: 0.6em auto auto 0.6em;
 }
 
-input {
-    width: 100%;
-    padding: 12px;
-}
 
 .post {
     position: fixed;
     top: 60px; right: 0px; bottom: 0px;
-    background-color: #efefef;
+    background-color: #fff;
     z-index: 500;
     max-width: 50vw;
     width: 100%;
     padding: 20px;
-    overflow-y: scroll;
-    -webkit-animation: slideIn .3s forwards; /* Safari 4+ */
-    -moz-animation:    slideIn .3s forwards; /* Fx 5+ */
-    -o-animation:      slideIn .3s forwards; /* Opera 12+ */
+    border-left: 1px solid #c3c3c3;
+    -webkit-animation: slideIn .3s forwards;
+    -moz-animation:    slideIn .3s forwards;
+    -o-animation:      slideIn .3s forwards;
     animation:         slideIn .3s forwards;
 }
 
 .post.hide {
-    -webkit-animation: slideOut .2s forwards; /* Safari 4+ */
-    -moz-animation:    slideOut .2s forwards; /* Fx 5+ */
-    -o-animation:      slideOut .2s forwards; /* Opera 12+ */
+    -webkit-animation: slideOut .2s forwards;
+    -moz-animation:    slideOut .2s forwards;
+    -o-animation:      slideOut .2s forwards;
     animation:         slideOut .2s forwards;
+}
+
+.post-close {
+    width: 2em; height: 2em;
+    padding: 0.4em 0.6em;
+    position: absolute; left: -2em;
+    background: #fff;
+    border: 1px solid #c3c3c3;
+    color: #c3c3c3;
+    border-right: none;
+    cursor: pointer;
+}
+
+.post-body {
+    overflow-y: scroll;
+    height: 100%;
 }
 
 .post img {
     max-width: 100%;
 }
+
+.button {
+    display: block;
+    width: 100%;
+    border: 1px solid #FF6673;
+    color: #FF6673;
+    padding: 0.8em 2em;
+    text-align: center;
+    margin-top: 1em;
+    transition: all .2s ease-out;
+    cursor: pointer;
+    -moz-user-select: none;
+    -web-user-select: none;
+    user-select: none;
+}
+
+.button:hover {
+    color: #fff;
+    background-color: #FF6673;
+    transition: all .2s ease-out;
+}
+
+
+pre {
+    white-space: pre-wrap;
+}
+
 
 @media screen and (max-width: 756px) {
     .post {

@@ -20,7 +20,7 @@ var common = {
 
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Map blog',
+            title: 'Local Wisdom',
             template: 'index.html',
             inject: 'body'
         })

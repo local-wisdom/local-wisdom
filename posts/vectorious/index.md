@@ -3,7 +3,9 @@ title: 'Vectorious'
 date: '2015-11-24'
 lat: 51.1171140
 lng: 56.1171140
-author: ramon
+author: 'Ramon Gebben'
+header: 'http://i.imgur.com/Ex08W0g.jpg'
+shop: Daily Javascript
 avatar: 'http://i.imgur.com/UBLi3O3.jpg'
 template: article.jade
 ---

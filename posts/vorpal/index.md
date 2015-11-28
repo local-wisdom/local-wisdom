@@ -3,7 +3,9 @@ title: 'Vorpal.js'
 date: '2015-10-19'
 lat: 52.1171140
 lng: 53.1171140
-author: ramon
+author: 'Ramon Gebben'
+header: 'http://i.imgur.com/Ex08W0g.jpg'
+shop: Daily Javascript
 avatar: 'http://i.imgur.com/UBLi3O3.jpg'
 template: article.jade
 ---

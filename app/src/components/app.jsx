@@ -39,7 +39,7 @@ class App extends React.Component {
               showPost: false,
               currentPost: null
           });
-      }, 700);
+      }, 200);
   }
 
 

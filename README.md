@@ -26,4 +26,4 @@ To deploy new version to gh-pages run:
 npm run deploy
 ```
 
-Check the app at http://localhost:8080
+Check the app at [http://localhost:8080](http://localhost:8080)

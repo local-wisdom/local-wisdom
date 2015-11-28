@@ -64,7 +64,23 @@ class Map extends React.Component {
     }
 
     getPopupContent(post){
-        return `<div class="map-post"><h1>${post.title}</h1>${ post.body.substring(0,250) }<div class="more_button" data-id="${ post.title }">More..</div></div>`;
+        return (`<div class="map-post">
+                    <div class="map-post_author">
+                        <div class="map-post_author-avatar" style="background-image: url('${post.avatar}')"></div>
+                        <div class="map-post_author-info">
+                            <div class="map-post_author-name">${post.author}</div>
+                            <div class="map-post_author-shop">${post.shop}</div>
+                        </div>
+                    </div>
+                    <div class="map-post_body">
+                        <div class="map-post_body-header" style="background-image: url('${post.header}')"></div>
+                        <div class="map-post_body-text">
+                            <h2>${post.title}</h2>
+                            ${ post.body.substring(0,300) }...
+                        </div>
+                    </div>
+                    <div class="more_button button" data-id="${ post.title }">More</div>
+                </div>`);
     }
 
     onOpenMore(post){

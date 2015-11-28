@@ -1,4 +1,5 @@
 import React from 'react';
+import Author from './author';
 
 class Post extends React.Component {
 
@@ -15,12 +16,9 @@ class Post extends React.Component {
     let post = this.props.post;
     return (
         <div className='post'>
-            <div className='post-close' onClick={ this.props.onClose.bind(this) }>X</div>
+            <div className='post-close' onClick={ this.props.onClose.bind(this) }>×</div>
+            <Author post={ post }/>
             <h1>{post.title}</h1>
-            <div className='post-info'>
-                <div className='post-info_time'>{post.date}</div>
-                <div className='post-info_author'>By: {post.author}</div>
-            </div>
             <div className='post-body' dangerouslySetInnerHTML={{__html: post.body }} />
         </div>
     );
