@@ -1,15 +1,29 @@
 language: node_js
 node_js:
-  - "4.1"
-  - "4.0"
-  - "0.12"
-  - "0.11"
-  - "0.10"
-  - "0.8"
-  - "0.6"
-  - "iojs"
+    - "4.1"
+    - "4.0"
+    - "0.12"
+    - "0.11"
+    - "0.10"
+    - "0.8"
+    - "0.6"
+    - "iojs"
 
 before_script:
-  - npm i gulp -g
+    - npm i gulp -g
 
-script: npm run deploy
+script: npm run build;
+
+after_success: |
+  if [ -n "$GITHUB_API_KEY" ]; then
+    cd "$TRAVIS_BUILD_DIR"
+    cd build
+    git init
+    git checkout -b gh-pages
+    git add .
+    git -c user.name='travis' -c user.email='travis' commit -m 'Push by Travis'
+    # Make sure to make the output quiet, or else the API token will leak!
+    # This works because the API key can replace your password.
+    git push -f -q https://RamonGebben:$GITHUB_API_KEY@github.com/RamonGebben/local-wisdom-gh-pages gh-pages &2>/dev/null
+    cd "$TRAVIS_BUILD_DIR"
+  fi
