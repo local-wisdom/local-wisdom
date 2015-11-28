@@ -546,3 +546,25 @@
 2015-11-11T19:53:17.370951000 0.122098s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
 2015-11-11T19:53:17.370954000 0.122102s notice: Server ready, "Eve_local_m4f" d29a9fdc-fe6a-4bee-b7fd-6c3ad4f42a9f
 2015-11-11T19:53:19.874829000 2.625857s notice: A newer version of the RethinkDB server is available: 2.1.5-2. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2015-11-14T10:51:11.239972000 0.652727s notice: Running rethinkdb 2.0.3 (CLANG 6.1.0 (clang-602.0.53))...
+2015-11-14T10:51:11.248166000 0.660916s notice: Running on Darwin 14.5.0 x86_64
+2015-11-14T10:51:11.248884000 0.661633s notice: Loading data from directory /Users/ramon/Projects/local-wisdom/rethinkdb_data
+2015-11-14T10:51:11.363194000 0.775901s info: Automatically using cache size of 1891 MB
+2015-11-14T10:51:11.363667000 0.776374s notice: Listening for intracluster connections on port 29015
+2015-11-14T10:51:11.365119000 0.777826s notice: Listening for client driver connections on port 28015
+2015-11-14T10:51:11.365225000 0.777932s notice: Listening for administrative HTTP connections on port 8000
+2015-11-14T10:51:11.365229000 0.777936s notice: Listening on addresses: 127.0.0.1, ::1
+2015-11-14T10:51:11.365232000 0.777939s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2015-11-14T10:51:11.365235000 0.777942s notice: Server ready, "Eve_local_m4f" d29a9fdc-fe6a-4bee-b7fd-6c3ad4f42a9f
+2015-11-14T10:51:11.714466000 1.127174s notice: A newer version of the RethinkDB server is available: 2.2.0. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2015-11-16T19:00:04.415902000 0.426630s notice: Running rethinkdb 2.0.3 (CLANG 6.1.0 (clang-602.0.53))...
+2015-11-16T19:00:04.422029000 0.432753s notice: Running on Darwin 14.5.0 x86_64
+2015-11-16T19:00:04.422476000 0.433199s notice: Loading data from directory /Users/ramon/Projects/local-wisdom/rethinkdb_data
+2015-11-16T19:00:04.580186000 0.590909s info: Automatically using cache size of 1235 MB
+2015-11-16T19:00:04.581094000 0.591816s notice: Listening for intracluster connections on port 29015
+2015-11-16T19:00:04.583360000 0.594083s notice: Listening for client driver connections on port 28015
+2015-11-16T19:00:04.583517000 0.594240s notice: Listening for administrative HTTP connections on port 8000
+2015-11-16T19:00:04.583528000 0.594251s notice: Listening on addresses: 127.0.0.1, ::1
+2015-11-16T19:00:04.583532000 0.594255s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2015-11-16T19:00:04.583536000 0.594259s notice: Server ready, "Eve_local_m4f" d29a9fdc-fe6a-4bee-b7fd-6c3ad4f42a9f
+2015-11-16T19:00:04.999499000 1.010222s notice: A newer version of the RethinkDB server is available: 2.2.0. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.

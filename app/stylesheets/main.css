@@ -94,6 +94,7 @@ nav {
     top: 60px; bottom: 0;
     width: 50vw;
     border-left: 1px solid #000;
+    padding: 20px;
     background-color: #efefef;
     -webkit-animation: slideIn .3s forwards; /* Safari 4+ */
     -moz-animation:    slideIn .3s forwards; /* Fx 5+ */
@@ -113,21 +114,60 @@ input {
     padding: 12px;
 }
 
+.post {
+    position: fixed;
+    top: 60px; right: 0px; bottom: 0px;
+    background-color: #efefef;
+    z-index: 500;
+    max-width: 50vw;
+    width: 100%;
+    padding: 20px;
+    overflow-y: scroll;
+    -webkit-animation: slideIn .3s forwards; /* Safari 4+ */
+    -moz-animation:    slideIn .3s forwards; /* Fx 5+ */
+    -o-animation:      slideIn .3s forwards; /* Opera 12+ */
+    animation:         slideIn .3s forwards;
+}
+
+.post.hide {
+    -webkit-animation: slideOut .2s forwards; /* Safari 4+ */
+    -moz-animation:    slideOut .2s forwards; /* Fx 5+ */
+    -o-animation:      slideOut .2s forwards; /* Opera 12+ */
+    animation:         slideOut .2s forwards;
+}
+
+.post img {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 756px) {
+    .post {
+        max-width: 100%;
+    }
+}
 
 @-webkit-keyframes slideIn {
     0%   { right: -50vw; }
+    75%  { right: 30px; }
+    95%  { right: -5px; }
     100% { right: 0; }
 }
 @-moz-keyframes slideIn {
     0%   { right: -50vw; }
+    75%  { right: 30px; }
+    95%  { right: -5px; }
     100% { right: 0; }
 }
 @-o-keyframes slideIn {
     0%   { right: -50vw; }
+    75%  { right: 30px; }
+    95%  { right: -5px; }
     100% { right: 0; }
 }
 @keyframes slideIn {
     0%   { right: -50vw; }
+    75%  { right: 30px; }
+    95%  { right: -5px; }
     100% { right: 0; }
 }
 

@@ -1,25 +1,18 @@
 
 const API_URL = 'http://localhost:3000';
+const blogPosts = JSON.parse(require('raw!../../data/blogposts.json'));
+
 const API = {
-    getAll: (type) => {
-        switch (type) {
-            case 'authors':
-                return fetch(`${API_URL}/authors`).then(data => data.json());
-                break;
-            default:
-                // Do nothing
-        }
-    },
-    saveAuthor: (form, author) => {
-        console.log( form, author );
-        return fetch(`${API_URL}/authors/${author.id}`, {
-            method: 'put',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(form)
+    getAll: () => {
+        let blogPostsArr = [];
+        Object.keys(blogPosts).forEach(key => {
+            let post = blogPosts[key].index;
+            blogPostsArr.push(post);
         });
+        return blogPostsArr;
     }
 };
+
+window.API = API;
 
 export default API;

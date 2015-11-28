@@ -1,17 +1,22 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import L from 'leaflet';
+import _ from 'lodash';
 
 class Map extends React.Component {
 
     constructor(props){
         super(props);
         this.props = props;
+        this.state = {
+            posts: null
+        }
     }
 
     componentDidMount(){
         this.mapCanvas = document.getElementById('map');
 
-        this.map = L.map('map', {zoomControl:false}).setView([52.0907370,  5.1214200], 14);
+        this.map = L.map('map', {zoomControl:false}).setView([51.1171140,  56.1171140], 8);
 
         L.tileLayer('http://{s}.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.png', {
                     attribution: '&copy; <a href="http://osm.org/copyright" title="OpenStreetMap" target="_blank">OpenStreetMap</a> contributors | Tiles Courtesy of <a href="http://www.mapquest.com/" title="MapQuest" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png" width="16" height="16">',
@@ -22,33 +27,27 @@ class Map extends React.Component {
     }
 
     componentDidUpdate(){
-        this.posts = this.props.authors.reduce((prev, author) => {
-            let posts = author.posts.map(post => {
-                post.author = author;
-                return post;
-            });
-            prev = prev.concat(posts);
-            return prev;
-        }, []);
-        console.log(this.posts);
-        this.setMarkers();
+        if(!_.isEqual(this.props.posts, this.state.posts)){
+            this.setState({posts: this.props.posts})
+            this.setMarkers();
+        }
     }
 
     getMarkerHTML(post){
-        return `<div class="avatar" style="background-image:url(${ post.author.avatar })"></div><span class="marker-pointer"></span>`
+        return `<div class="avatar" style="background-image:url(${ post.avatar })"></div><span class="marker-pointer"></span>`
     }
 
     setMarkers(){
-        let marker, avatarIcon, popupContent;
-        this.posts.forEach(post => {
-
+        let marker, avatarIcon, popupContent, post;
+        this.props.posts.forEach(post => {
+            console.log(post);
             avatarIcon = L.divIcon({
-              className: 'avatar-icon',
-              iconSize: [60, 60],
-              html: this.getMarkerHTML(post)
+                className: 'avatar-icon',
+                iconSize: [60, 60],
+                html: this.getMarkerHTML(post)
             });
 
-            marker = L.marker([post.lat,  post.lon], {icon: avatarIcon }).addTo(this.map);
+            marker = L.marker([post.lat,  post.lng], {icon: avatarIcon }).addTo(this.map);
 
             popupContent = this.getPopupContent(post);
 
@@ -56,21 +55,20 @@ class Map extends React.Component {
             marker.on('click', (e) => {
                 e.target._icon.classList.add('open')
                 console.log( e, e.originalEvent.pageX, e.originalEvent.pageY );
+                document.querySelector('.more_button')
+                        .addEventListener('click', (evt) => {
+                            this.onOpenMore(evt.target.dataset.id);
+                        });
             });
         });
     }
 
-    alerter(){
-        alert('pizza');
-    }
-
     getPopupContent(post){
-        return `<div class="map-post"><h1>${post.title}</h1>${ post.content }</div>`;
+        return `<div class="map-post"><h1>${post.title}</h1>${ post.body.substring(0,250) }<div class="more_button" data-id="${ post.title }">More..</div></div>`;
     }
 
-    onMarkerClicked(e){
-        alert('Not implemented yet');
-        console.log(e);
+    onOpenMore(post){
+        this.props.onOpenPost(post);
     }
 
     render() {
