@@ -14,6 +14,6 @@ script: |
         git checkout gh-pages
         git add .
         git -c user.name='travis' -c user.email='travis' commit -m 'Push by Travis'
-        git push -f -q "https://RamonGebben:$GITHUB_API_KEY@github.com/RamonGebben/local-wisdom gh-pages"
+        git push -f -q "https://RamonGebben:$GITHUB_API_KEY@github.com/RamonGebben/local-wisdom" origin gh-pages
         cd "$TRAVIS_BUILD_DIR"
     fi
