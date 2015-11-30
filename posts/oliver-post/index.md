@@ -7,6 +7,7 @@ author: Oliver Twist
 header: 'http://i.imgur.com/oQFDtQC.jpg'
 shop: Oliver Twist's Bikes
 avatar: 'http://i.imgur.com/dQtOxuT.png'
+tags: 'food'
 ---
 
 ### What is your favorite dish to eat and/or cook? What tips do you have when you are cooking it?

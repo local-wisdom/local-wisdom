@@ -8,6 +8,7 @@ header: 'http://i.imgur.com/Ex08W0g.jpg'
 shop: Daily Javascript
 avatar: 'http://i.imgur.com/UBLi3O3.jpg'
 template: article.jade
+tags: 'drink'
 ---
 
 Vorpal (GitHub: [dthree/vorpal](https://github.com/dthree/vorpal), License: MIT, npm: vorpal)

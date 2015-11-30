@@ -7,7 +7,7 @@ author: 'Ramon Gebben'
 header: 'http://i.imgur.com/Ex08W0g.jpg'
 shop: Daily Javascript
 avatar: 'http://i.imgur.com/UBLi3O3.jpg'
-template: article.jade
+tags: 'fasion design'
 ---
 
 Vue.js (GitHub: [vuejs/vue](https://github.com/vuejs/vue), License: MIT, npm: vue
