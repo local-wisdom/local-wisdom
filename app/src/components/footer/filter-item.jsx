@@ -12,12 +12,12 @@ class FilterItem extends React.Component {
   }
 
   onClicked(){
-      this.props.onClick();
+      this.props.onClick(this.props.tag);
   }
 
   render() {
     return (
-        <div className='filter-item button' onClick={ this.props.onClick }>
+        <div className={`filter-item button ${this.props.isActive ? 'active' : ''}`} onClick={ this.onClicked.bind(this) }>
             {this.props.tag}
         </div>
     );

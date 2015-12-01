@@ -1,6 +1,7 @@
 import React from 'react';
 import Nav from './nav/nav.jsx';
 import Map from './map/map.jsx';
+import Footer from './footer/footer.jsx';
 import Post from './post/post.jsx';
 import API from '../util/api';
 import _ from 'lodash';
@@ -48,12 +49,23 @@ class App extends React.Component {
       console.log( this.state.posts)
   }
 
+  onFilterChange(filter){
+      let posts;
+      if( filter !== 'all'){
+          posts = this.state.posts.filter(post => _.includes(post.tags, filter));
+      }else {
+          posts = this.state.posts;
+      }
+      this.setState({ posts: posts });
+  }
+
   render() {
     return (
         <main role='container'>
             <Nav />
             { this.state.showPost ? <Post onClose={ this.onClosePost.bind(this) } post={ this.state.currentPost }/> : null }
             <Map posts={ this.state.posts } onOpenPost={ this.onOpenPost.bind(this) } />
+            <Footer onFilterChange={this.onFilterChange.bind(this)}/>
         </main>
     );
   }
