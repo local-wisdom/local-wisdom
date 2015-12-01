@@ -9,8 +9,9 @@ class Map extends React.Component {
         super(props);
         this.props = props;
         this.state = {
-            posts: null
-        }
+            posts: null,
+        };
+        this.markers = [];
     }
 
     componentDidMount(){
@@ -28,6 +29,8 @@ class Map extends React.Component {
 
     componentDidUpdate(){
         if(!_.isEqual(this.props.posts, this.state.posts)){
+            this.markers.forEach(marker => this.map.removeLayer(marker));
+            this.markers = [];
             this.setState({posts: this.props.posts})
             this.setMarkers();
         }
@@ -48,6 +51,7 @@ class Map extends React.Component {
             });
 
             marker = L.marker([post.lat,  post.lng], {icon: avatarIcon }).addTo(this.map);
+            this.markers.push(marker);
 
             popupContent = this.getPopupContent(post);
 

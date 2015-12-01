@@ -23,10 +23,7 @@ class App extends React.Component {
   }
 
   onOpenPost(title) {
-      let post = this.state.posts.filter(p => {
-          console.log( p );
-          return p.title === title
-      })[0];
+      let post = this.state.posts.filter(p => p.title === title)[0];
       this.setState({
           showPost: true,
           currentPost: post
@@ -50,12 +47,11 @@ class App extends React.Component {
   }
 
   onFilterChange(filter){
-      let posts;
+      let posts = API.getAll();
       if( filter !== 'all'){
-          posts = this.state.posts.filter(post => _.includes(post.tags, filter));
-      }else {
-          posts = this.state.posts;
+          posts = posts.filter(post => _.includes(post.tags, filter));
       }
+      console.log( posts )
       this.setState({ posts: posts });
   }
 
