@@ -7,7 +7,7 @@ author: 'Ramon Gebben'
 header: 'http://i.imgur.com/Ex08W0g.jpg'
 shop: Daily Javascript
 avatar: 'http://i.imgur.com/UBLi3O3.jpg'
-template: article.jade
+tags: 'design events'
 ---
 
 Vstack-validator (GitHub: [vslinko/vstack-validator](https://github.com/vslinko/vstack-validator), License: MIT, npm: vstack-validator)

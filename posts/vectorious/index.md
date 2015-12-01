@@ -8,6 +8,7 @@ header: 'http://i.imgur.com/Ex08W0g.jpg'
 shop: Daily Javascript
 avatar: 'http://i.imgur.com/UBLi3O3.jpg'
 template: article.jade
+tags: 'food event'
 ---
 
 Vectorious (GitHub: [mateogianolio/vectorious](https://github.com/mateogianolio/vectorious), License: MIT, npm: vectorious)
