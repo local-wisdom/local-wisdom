@@ -47,11 +47,7 @@ class App extends React.Component {
   }
 
   onFilterChange(filter){
-      let posts = API.getAll();
-      if( filter !== 'all'){
-          posts = posts.filter(post => _.includes(post.tags, filter));
-      }
-      console.log( posts )
+      let posts = filter === 'all' ? API.getAll() : API.getAll().filter(post => _.includes(post.tags, filter));
       this.setState({ posts: posts });
   }
 

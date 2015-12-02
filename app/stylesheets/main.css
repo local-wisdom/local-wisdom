@@ -8,7 +8,7 @@ body {
   color: #333;
 }
 
-h1 { margin: 0; }
+h1, h2, h3 { margin: 0; }
 
 nav {
     position: fixed;
@@ -196,19 +196,12 @@ pre {
     white-space: pre-wrap;
 }
 
-
-@media screen and (max-width: 756px) {
-    .post {
-        max-width: 100%;
-    }
-}
-
-
 .footer {
     position: fixed;
     right: 0px; bottom: 0px; left: 0px;
     height: 60px;
     background-color: #fff;
+    z-index: 5000;
 }
 
 .filter {
@@ -224,6 +217,37 @@ pre {
     border: 1px solid transparent;
 }
 
+
+.mobile_trigger {
+    display: none;
+    width: 50px; height: 50px;
+    border: 1px solid #FF6673;
+    border-bottom: 0;
+    border-left: 0;
+    background-color: #fff;
+    position: absolute;
+    top: -50px; left: 0;
+
+}
+
+@media screen and (max-width: 756px) {
+    .post {
+        max-width: 100%;
+    }
+
+    .post-close {
+        top: 0; right: 0; left: auto;
+        font-size: 2em;
+    }
+
+    .filter-item.button {
+        display: block;
+        margin: 0.5em 0 0 0;
+        border: 1px solid #FF6673;
+    }
+
+    .mobile_trigger { display: block;}
+}
 
 @-webkit-keyframes slideIn {
     0%   { right: -50vw; }

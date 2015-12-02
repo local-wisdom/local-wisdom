@@ -29,11 +29,15 @@ class Map extends React.Component {
 
     componentDidUpdate(){
         if(!_.isEqual(this.props.posts, this.state.posts)){
-            this.markers.forEach(marker => this.map.removeLayer(marker));
-            this.markers = [];
-            this.setState({posts: this.props.posts})
+            this.clearMarkers();
+            this.setState({posts: this.props.posts});
             this.setMarkers();
         }
+    }
+
+    clearMarkers(){
+        this.markers.forEach(marker => this.map.removeLayer(marker));
+        this.markers = [];
     }
 
     getMarkerHTML(post){
