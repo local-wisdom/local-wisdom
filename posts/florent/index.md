@@ -9,7 +9,7 @@ shop: Oliver Twist's Bikes
 avatar: 'http://i.imgur.com/dQtOxuT.png'
 tags: 'food'
 ---
-![image](http://i.imgur.com/o13DScl.jpg)
+
 ### What is your favorite dish to eat and/or cook? What tips do you have when you are cooking it?
 
 I know people tend to have one, but I don’t really have a true favorite dish. For me, eating is something that must be done with passion no matter what dish you have. I do think it’s important though for people to eat more vegetables, so as the head of the team it is great fun to think about new ways to prepare them. We really enjoy leaving our guests an experience with that ‘wow’ effect through a healthy balanced meal.
