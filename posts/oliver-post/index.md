@@ -1,8 +1,8 @@
 ---
 title: 'Oliver Post'
 date: '2015-11-28'
-lat: 53.1171140
-lng: 51.1171140
+lat: 52.1171140
+lng: 54.1171140
 author: Oliver Twist
 header: 'http://i.imgur.com/oQFDtQC.jpg'
 shop: Oliver Twist's Bikes
