@@ -17,7 +17,7 @@ class Map extends React.Component {
     componentDidMount(){
         this.mapCanvas = document.getElementById('map');
 
-        this.map = L.map('map', {zoomControl:false}).setView([51.1171140,  56.1171140], 8);
+        this.map = L.map('map', {zoomControl:false}).setView([52.0833, 5.1167], 8);
 
         L.tileLayer('http://{s}.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.png', {
                     attribution: '&copy; <a href="http://osm.org/copyright" title="OpenStreetMap" target="_blank">OpenStreetMap</a> contributors | Tiles Courtesy of <a href="http://www.mapquest.com/" title="MapQuest" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png" width="16" height="16">',
@@ -84,7 +84,7 @@ class Map extends React.Component {
                         <div class="map-post_body-header" style="background-image: url('${post.header}')"></div>
                         <div class="map-post_body-text">
                             <h2>${post.title}</h2>
-                            ${ post.body.substring(0,300) }...
+                            ${ post.body.substring(0,400) }...
                         </div>
                     </div>
                     <div class="more_button button" data-id="${ post.title }">More</div>
