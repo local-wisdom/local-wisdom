@@ -115,6 +115,10 @@ nav {
     background-size: cover;
 }
 
+.map-post_body-text img {
+    display: none;
+}
+
 .map-post_author-avatar {
     width: 75px; height: 75px;
     background-size: 100%;
