@@ -4,9 +4,9 @@ date: '2015-11-28'
 lat: 52.088446
 lng: 5.121609
 author: Birgit Calis
-header: 'http://imgur.com/KygvLyZ'
+header: 'http://i.imgur.com/KygvLyZ.jpg'
 shop: Emma b.
-avatar: 'http://imgur.com/Sx5yeGE'
+avatar: 'http://i.imgur.com/Sx5yeGE.jpg'
 tags: 'design'
 ---
 
@@ -21,7 +21,7 @@ Birgit studied in Architecture and Visual Art at the Utrecht Art academy and has
 
 
 ### Birgit’s recommendation
-![image](http://imgur.com/BeVmxCa)
+![image](http://i.imgur.com/BeVmxCa.jpg)
 “Well, initially I thought about choosing a stylish lamp since it always make your place much cozier, but I have decided for this little grey table.
 
 "It might look like an average side-table; however the name will persuade you otherwise. It is called DLM, which stands for ‘Don’t Leave Me’. The name was chosen due to the option of simply grabbing the upper handler and taking it with you. Especially in a Utrecht’s smaller apartments this might come very handy since you can just pick it up on place it wherever you want!
