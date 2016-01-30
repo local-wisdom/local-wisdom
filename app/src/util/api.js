@@ -9,7 +9,7 @@ const API = {
             let post = blogPosts[key].index;
             blogPostsArr.push(post);
         });
-        return blogPostsArr;
+        return _.uniq(blogPostsArr, 'title');
     }
 };
 

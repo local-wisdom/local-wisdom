@@ -43,7 +43,6 @@ class App extends React.Component {
 
   getPosts() {
       this.setState({posts: API.getAll()});
-      console.log( this.state.posts)
   }
 
   onFilterChange(filter){
