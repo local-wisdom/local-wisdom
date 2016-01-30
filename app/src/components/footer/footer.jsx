@@ -20,6 +20,15 @@ class Footer extends React.Component {
   }
 
   componentDidMount(){
+      window.addEventListener('resize', this.handleResize.bind(this));
+  }
+
+  componentWillUnmount() {
+      window.removeEventListener('resize', this.handleResize );
+  }
+
+  handleResize(){
+      this.setState({mobile_menu_active: window.innerWidth < 756 ? false : true });
   }
 
   onMobileFilterMenuClick(){
@@ -31,7 +40,8 @@ class Footer extends React.Component {
   render() {
     return (
         <div className='footer' style={{ 'height': this.state.mobile_menu_active ? 'auto' : '0px'}}>
-            <div className='mobile_trigger' onClick={this.onMobileFilterMenuClick.bind(this)}>{this.state.mobile_menu_active ? 'close' : 'open'}</div>
+            <div className={`mobile_trigger ${this.state.mobile_menu_active ? 'entypo-down-open-big' : 'entypo-up-open-big'}`}
+                 onClick={this.onMobileFilterMenuClick.bind(this)}/>
             <Filter items={this.state.tags}
                     onFilterChange={this.props.onFilterChange.bind(this)}/>
         </div>
