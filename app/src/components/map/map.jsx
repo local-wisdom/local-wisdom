@@ -17,7 +17,7 @@ class Map extends React.Component {
     componentDidMount(){
         this.mapCanvas = document.getElementById('map');
 
-        this.map = L.map('map', {zoomControl:false}).setView([52.0833, 5.1167], 8);
+        this.map = L.map('map', {zoomControl:false}).setView([52.0923, 5.1207], 16);
 
         L.tileLayer('http://{s}.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.png', {
                     attribution: '&copy; <a href="http://osm.org/copyright" title="OpenStreetMap" target="_blank">OpenStreetMap</a> contributors | Tiles Courtesy of <a href="http://www.mapquest.com/" title="MapQuest" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png" width="16" height="16">',
@@ -51,6 +51,8 @@ class Map extends React.Component {
             avatarIcon = L.divIcon({
                 className: 'avatar-icon',
                 iconSize: [60, 60],
+                iconAnchor: [30, 65],
+                popupAnchor: [0, -60],
                 html: this.getMarkerHTML(post)
             });
 
