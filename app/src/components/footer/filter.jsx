@@ -28,6 +28,7 @@ class Filter extends React.Component {
   render() {
       let items = this.props.items.map(item => {
           return(<FilterItem tag={item}
+                             key={item}
                              isActive={ item === this.state.active_tag }
                              onClick={ this.onFilterSelected.bind(this)} />);
       });

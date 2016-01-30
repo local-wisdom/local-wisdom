@@ -10,6 +10,8 @@ class Map extends React.Component {
         this.props = props;
         this.state = {
             posts: null,
+            windowHeight: window.innerHeight,
+            windowWidth: window.innerWidth
         };
         this.markers = [];
     }
@@ -25,6 +27,15 @@ class Map extends React.Component {
                 }).addTo( this.map );
 
         L.Icon.Default.imagePath = '../../../images';
+        window.addEventListener('resize', this.handleResize.bind(this));
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.handleResize );
+    }
+
+    handleResize(){
+        this.setState({windowWidth: window.innerWidth, windowHeight: window.innerHeight });
     }
 
     componentDidUpdate(){
@@ -74,6 +85,9 @@ class Map extends React.Component {
     }
 
     getPopupContent(post){
+        let postBody = document.createElement('div');
+        postBody.innerHTML = post.body.substring(0,400) + '...';
+
         return (`<div class="map-post">
                     <div class="map-post_author">
                         <div class="map-post_author-avatar" style="background-image: url('${post.avatar}')"></div>
@@ -86,7 +100,7 @@ class Map extends React.Component {
                         <div class="map-post_body-header" style="background-image: url('${post.header}')"></div>
                         <div class="map-post_body-text">
                             <h2>${post.title}</h2>
-                            ${ post.body.substring(0,400) }...
+                            ${ postBody.innerHTML }
                         </div>
                     </div>
                     <div class="more_button button" data-id="${ post.title }">More</div>
@@ -100,7 +114,7 @@ class Map extends React.Component {
     render() {
         return (
             <section style={{height: "100%"}}>
-            <div id='map' className='map' />
+            <div id='map' style={{height: `${this.state.windowHeight}px`, width: `${this.state.windowWidth}px` }} className='map' />
             </section>
         );
     }
