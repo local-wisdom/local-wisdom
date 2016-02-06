@@ -25,3 +25,8 @@ Birgit studied in Architecture and Visual Art at the Utrecht Art academy and has
 “Well, initially I thought about choosing a stylish lamp since it always make your place much cozier, but I have decided for this little grey table.
 
 "It might look like an average side-table; however the name will persuade you otherwise. It is called DLM, which stands for ‘Don’t Leave Me’. The name was chosen due to the option of simply grabbing the upper handler and taking it with you. Especially in a Utrecht’s smaller apartments this might come very handy since you can just pick it up on place it wherever you want!
+
+
+Follow Emma b. on [Facebook](https://www.facebook.com/emmabutrecht/) or visit their [website](https://www.emma-b.nl/)
+Photos by [Brian Benton](www.instagram.com/brianfbenton/)
+Written by [Pavlína Koloušková](https://deerpavlina.wordpress.com/)
