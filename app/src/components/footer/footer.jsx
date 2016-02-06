@@ -44,6 +44,11 @@ class Footer extends React.Component {
                  onClick={this.onMobileFilterMenuClick.bind(this)}/>
             <Filter items={this.state.tags}
                     onFilterChange={this.props.onFilterChange.bind(this)}/>
+
+            <div className='footer-links'>
+                <a href='mailto:some-email@gmail.com'>I'M A LOCAL</a>
+                <a href='mailto:contact@gmail.com'>CONTACT</a>
+            </div>
         </div>
     );
   }

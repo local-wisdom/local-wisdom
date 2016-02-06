@@ -239,6 +239,24 @@ pre {
     height: 60px;
     background-color: #fff;
     z-index: 5000;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links {
+    margin-right: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.footer-links a {
+    padding-right: 0.2em;
+    color: #787879;
+}
+
+.footer-links a:last-child {
+    text-decoration: none;
 }
 
 .filter {
@@ -308,6 +326,8 @@ pre {
 
 .panda-help-message.show { display: block; }
 .panda-help-message.hide { display: none; }
+
+
 
 @media screen and (max-width: 756px) {
     .post {
