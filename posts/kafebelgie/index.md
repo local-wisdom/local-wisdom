@@ -1,8 +1,8 @@
 ---
 title: 'Belgian beer bar'
 date: '2015-11-28'
-lat: 52.092941
-lng: 5.120440
+lat: 52.0890231
+lng: 5.1215179
 author: Gijs van Wiechen
 header: 'http://i.imgur.com/iqWp6pS.jpg'
 shop: Kafe Belgie
@@ -25,3 +25,7 @@ tags: 'fashion'
 "The process is completely different, in a sense that these beers are made with a process called ‘wild fermentation’ in the start. So in the beginning they create a more sour beer, that really uses only hops as conservation and it uses natural yeast, so it needs quite a lot of time to mature. If you leave it this way than its is a ‘Lambic beer’, but if you start to mature it on for instance sour cherries, then it will turn into a cherry beer or ‘Kriek’ as they call it in Belgium.
 
 "So if you would like to taste a real sour cherry beer, ask for an ‘Oud Kriek’ (old Kriek). Our Krieks are matured on real cherries, that people normally eat, but some breweries add syrup or just fruit juice, which there is a very heated debate about in the industry.
+
+See some visitor reviews on [Yelp](http://www.yelp.com/biz/kafe-belgi%C3%AB-utrecht-2)
+Written by [Jenőfi Bence](https://www.facebook.com/jenofi.bence?fref=ts)
+Photos by [Brian Benton](www.instagram.com/brianfbenton/)
