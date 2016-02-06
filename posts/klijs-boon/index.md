@@ -1,8 +1,8 @@
 ---
 title: 'Contemporary fashion'
 date: '2015-11-28'
-lat: 52.094907
-lng: 5.120084
+lat: 52.0949013
+lng: 5.1200802
 author: Gwen Boon
 header: 'http://i.imgur.com/0I4gBUe.jpg'
 shop: Klijs & Boon
@@ -33,3 +33,5 @@ Gwen owns Klijs & Boon, but before that she studied at the Utrecht Art Academy a
 "in Holland there is still a lot of pretending, and then in Copenhagen, where I always go, its so nice, I know people really well, its a lot of fun and I don't need to wear heels to be fashionable.
 
 "I remember once going to a fashion show in Amsterdam and I was wearing a really cool suit with all sorts of colours and sneakers, but all the other girls were wearing the same typical Amsterdam dresses so it was really awkward when we were photographed together!
+
+Follow Klijs & Boon on [Instagram](https://www.instagram.com/klijsenboon/) and [Facebook](https://www.facebook.com/klijsenboon), or visit their [website](http://klijsenboon.nl/)
