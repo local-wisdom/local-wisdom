@@ -26,3 +26,6 @@ Public Image Labels, lead by Ilse, is stocked with brands from Paris and Berlin.
 ### Ilse recommends Lamp-leather and safari jackets
 
 "My favourite item at the moment is the combination of these green machine-washed lamp-leather and a simple blouse on the top, its very elegant. But for the men, this season the safari jackets are well in fashion.
+
+Visit the Public Image Labels [website](www.pilfashion.nl/)
+Photos by [Lars Verkroost](https://www.instagram.com/larsverkroostphotography/)
