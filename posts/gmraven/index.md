@@ -29,3 +29,6 @@ GMraven make special tailored suits; printing the work of local artists on the i
 ### Guus recommends pop art
 
 "My family loves art so there was always a lot of influence from when I was growing up. I appreciate so many kinds of art, but I really like bright and vibrant pop art especially. There are lots of options here so people can have their favourite art inside their suits no matter what the style.
+
+Visit the GMraven [website](http://www.gmraven.com/)
+Photos by [Merissa Ward](https://www.instagram.com/merissaw/)
