@@ -1,8 +1,8 @@
 ---
 title: 'Classic vinyl'
 date: '2015-11-28'
-lat: 52.094777
-lng: 5.120096
+lat: 52.0946014
+lng: 5.1201070
 author: Jeroen Vedder
 header: 'http://i.imgur.com/JpQovAy.jpg'
 shop: Plato
@@ -30,7 +30,6 @@ Jeroen has loved records since he was 16 and can't imagine being in a place with
 ### Jeroen recommends Audio-technica and soon the Thorens turntables
 
 "We have the Audio-technica and soon the Thorens turntables which are good, affordable players that we have high expectations of. We also have a couple of people in town that repair any equipment because it is important that people have a good audio system that enhances your listening experience.
-
 
 Follow Plato on [Facebook](https://www.facebook.com/PlatoUtrecht/), or visit the [website](http://www.platomania.eu/)
 Photos by [Merissa Ward](https://www.instagram.com/merissaw/)
