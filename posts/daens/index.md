@@ -29,3 +29,6 @@ Skip began his tinkering with coffee in Berlin with Bonanza Coffee Heroes, and h
 "Why not try a cold brew coffee? The tones are far less acidic we noticed when you let it sit for for about 12 hours at around 7 degrees you have a beautiful coffee that is thick and vicious.
 
 "Just use the sieve and put it through the aero-press, filtering once or twice and the result is a really nice clean, thick coffee. Something very easy to drink in the summer but just watch out for the shakes because it can be a little too easy to drink!
+
+Follow Don't Skip Coffee on [Instagram](https://www.instagram.com/dontskipcoffee/) and [Facebook](https://www.facebook.com/dontskipcoffee/), or visit their [website](http://dontskipcoffee.com/)
+Photos by [Merissa Ward](https://www.instagram.com/merissaw/)
