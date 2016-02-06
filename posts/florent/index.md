@@ -31,3 +31,6 @@ The dish is really quite simple, coarse even and a very basic vegetable at its h
 ### Seasonal ingredients are crucial
 
 “We prepare our dishes using seasonally available products, trying to use as much as we can from within Europe.  Depending on the season, the weather and market availability it can affect our French-Belgian offering, so we need to strike the right balance so our guests can experience the simplicity of the dishes, still keeping the intensity of flavours.
+
+Read visitor reviews on [Tripadvisor](http://www.tripadvisor.com/Restaurant_Review-g188616-d7149004-Reviews-Florent-Utrecht.html), or visit their [website](http://www.restaurant-florent.nl/)
+Photos by [Lars Verkroost](https://www.instagram.com/larsverkroostphotography/)
