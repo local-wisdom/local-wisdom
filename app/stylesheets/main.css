@@ -44,7 +44,7 @@ h1, h2, h3 { margin: 0; }
 nav {
     position: fixed;
     top: 0; left: 0; right: 0;
-    background-color: #FF6673;
+    background-color: rgba(93, 196, 223, 0.9);
     z-index: 5000;
 }
 
@@ -68,7 +68,7 @@ nav {
 }
 
 .avatar-icon > .avatar {
-    border: 2px solid #FF6673;
+    border: 2px solid #5DC4DF;
     border-radius: 50%;
     overflow: hidden;
     width: 100%;
@@ -81,7 +81,7 @@ nav {
 .marker-pointer {
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    border-top: 20px solid #FF6673;
+    border-top: 20px solid #5DC4DF;
     position: absolute;
     bottom: -13px;
     left: 10px;
@@ -187,7 +187,7 @@ nav {
 
 .post-close {
     width: 2em; height: 2em;
-    padding: 0.4em 0.6em;
+    padding: 0.3em 0.6em;
     position: absolute; left: -2em;
     background: #fff;
     border: 1px solid #c3c3c3;
@@ -209,8 +209,8 @@ nav {
 .button {
     display: block;
     width: 100%;
-    border: 1px solid #FF6673;
-    color: #FF6673;
+    border: 1px solid #5DC4DF;
+    color: #5DC4DF;
     padding: 0.8em 2em;
     text-align: center;
     margin-top: 1em;
@@ -224,7 +224,7 @@ nav {
 .button:hover,
 .button.active {
     color: #fff;
-    background-color: #FF6673;
+    background-color: #5DC4DF;
     transition: all .2s ease-out;
 }
 
@@ -258,7 +258,7 @@ pre {
 .mobile_trigger {
     display: none;
     width: 50px; height: 50px;
-    border: 1px solid #FF6673;
+    border: 1px solid #5DC4DF;
     border-bottom: 0;
     border-left: 0;
     background-color: #fff;
@@ -266,9 +266,48 @@ pre {
     top: -50px; left: 0;
     font-size: 2em;
     padding: 0.3em;
-    line-height: 0.9;    
+    line-height: 0.9;
 
 }
+
+.panda {
+    position: absolute;
+    right: 1em; bottom: 5em;
+    width: 100px; height: 100px;
+    padding: 13px 0px 0px 5px;
+
+    border: 5px solid #5DC4DF;
+    border-radius: 50%;
+
+    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+    z-index: 1400;
+    cursor: pointer;
+}
+
+.panda img { max-width:  90%; }
+
+.panda-help-message {
+    position: absolute;
+    top: -27em; left: -14em;
+    width: 20em;
+    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+    border-radius: 4px;
+    padding: 1em;
+}
+
+.panda-help-message::before {
+    content: " ";
+    width: 0; height: 0;
+    border: 0 solid transparent;
+    border-left-width: 50px;
+    border-right-width: 8px;
+    border-top: 50px solid #FFF;
+    position: absolute;
+    right: 4em; bottom: -3em;
+}
+
+.panda-help-message.show { display: block; }
+.panda-help-message.hide { display: none; }
 
 @media screen and (max-width: 756px) {
     .post {
@@ -283,7 +322,7 @@ pre {
     .filter-item.button {
         display: block;
         margin: 0.5em 0 0 0;
-        border: 1px solid #FF6673;
+        border: 1px solid #5DC4DF;
     }
 
     .mobile_trigger { display: block;}

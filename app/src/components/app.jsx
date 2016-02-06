@@ -2,6 +2,7 @@ import React from 'react';
 import Nav from './nav/nav.jsx';
 import Map from './map/map.jsx';
 import Footer from './footer/footer.jsx';
+import Panda from './panda/panda.jsx';
 import Post from './post/post.jsx';
 import API from '../util/api';
 import _ from 'lodash';
@@ -56,6 +57,7 @@ class App extends React.Component {
             <Nav />
             { this.state.showPost ? <Post onClose={ this.onClosePost.bind(this) } post={ this.state.currentPost }/> : null }
             <Map posts={ this.state.posts } onOpenPost={ this.onOpenPost.bind(this) } />
+            <Panda />
             <Footer onFilterChange={this.onFilterChange.bind(this)}/>
         </main>
     );
